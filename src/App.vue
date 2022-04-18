@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <LiteYouTubeEmbed
+      id="dQw4w9WgXcQ"
+      title="Rick Astley - Never Gonna Give You Up (Official Music Video)"
+  />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import { defineComponent } from 'vue'
+  import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
+  import 'vue-lite-youtube-embed/dist/style.css'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  export default defineComponent({
+    components: { LiteYouTubeEmbed }
+  })
 </script>
 
 <style>
